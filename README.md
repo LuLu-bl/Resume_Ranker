@@ -10,15 +10,15 @@ This an application for automated resume screening and ranking using NLP technol
 
 	**Libraries used:** 
 		[python-pdfbox](https://en.wikipedia.org/wiki/PDFBox), 
-		[os](https://en.wikipedia.org/wiki/Operating_system), 
-		[glob](https://en.wikipedia.org/wiki/lob_%28programming%29)
+		[os](https://www.geeksforgeeks.org/os-module-python-examples/), 
+		[glob](https://docs.python.org/3/library/glob.html)
 
 - **Loading:** The pdf resumes that were extracted to text were then loaded into a .csv file. Each text file was allocated a unique ID alongside the text extracted and the filename using the text to csv function that created. The load_csv function was then utilised to load the .csv file into a pandas data frame. 
 
 	**Libraries used:** 
-	[CSV](https://en.wikipedia.org/wiki/Comma-separated_values)
-	[pandas](https://en.wikipedia.org/wiki/Pandas_%28software%29)
-	[hashlib](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+	[CSV](https://docs.python.org/3/library/csv.html)
+	[https://www.activestate.com/resources/quick-reads/what-is-pandas-in-python-everything-you-need-to-know/](https://en.wikipedia.org/wiki/Pandas_%28software%29)
+	[hashlib](https://vegibit.com/what-is-python-hashlib/#:~:text=hashlib%20is%20a%20module%20in,output%20called%20a%20hash%20value.)
 
 - **Preprocessing and Cleaning:** Then utilized the NLTK library to clean the resume text as follows:
 	- Regex to remove hyperlinks, special characters, or punctuation.
@@ -29,14 +29,14 @@ This an application for automated resume screening and ranking using NLP technol
 	The cleaned text was appended as a column to the data frame, respectively.
 
 	**Libraries used:** 
-	[NLTK](https://en.wikipedia.org/wiki/Natural_Language_Toolkit)
-	[re](https://en.wikipedia.org/wiki/Regular_expression)
+	[NLTK]https://www.analyticsvidhya.com/blog/2021/07/getting-started-with-nlp-using-nltk-library/#:~:text=NLTK%20is%20a%20standard%20python,for%20NLP%20and%20Computational%20Linguistics.)
+	[re](https://developers.google.com/edu/python/regular-expressions#:~:text=The%20Python%20%22re%22%20module%20provides,that%20pattern%20within%20the%20string.)
 
 - **Extract Skills:** To extract skills, used skillNer, which is a module that allows us to automatically extract skills and certifications from unstructured job postings, texts, and applicant resumes. The extracted skills (both soft and hard skills) were then passed through the data frame 
 
 	**Libraries used:**
-	[skillNer](https://en.wikipedia.org/wiki/Named-entity_recognition)
-	[spacy](https://en.wikipedia.org/wiki/SpaCy)
+	[skillNer](https://pypi.org/project/skillNer/#:~:text=SkillNer%20is%20an%20NLP%20module,linker%20to%20prevent%20skill%20duplications.)
+	[spacy](https://realpython.com/natural-language-processing-spacy-python/#:~:text=spaCy%20is%20a%20free%2C%20open,general%2Dpurpose%20natural%20language%20processing.)
 
 - **Ranking:** Once the skills are visualised, the user gets to pass keywords and a mark respective to each keyword mentioned. Developed the function to ensure that points are given to one word only once.
 	
@@ -44,7 +44,7 @@ This an application for automated resume screening and ranking using NLP technol
 	
 	This way the recruiter can prioritise the important skills. Afterwards, the scores for each resume were calculated and sortedwith maximum scorers at the top of the list.
 
-	**Libraries used:** [numpy](https://en.wikipedia.org/wiki/NumPy)
+	**Libraries used:** [numpy](https://www.w3schools.com/python/numpy/numpy_intro.asp#:~:text=What%20is%20NumPy%3F,you%20can%20use%20it%20freely.)
 
 ## Implementation
 ### Web page for resume submission and resume rating
@@ -80,5 +80,3 @@ Overall, the implementation of the application was successful, and it was able t
 	- Software Engineering – Python, Java, SQL, Linux
 
 Overall, the implementation involved the use of several tools and libraries for data extraction, preprocessing, and visualization. The end result was a set of visualizations and rankings that can be used to gain insights into the skills present in the resumes.
-
-
