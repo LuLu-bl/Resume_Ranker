@@ -62,13 +62,13 @@ Python Libraries 	pdfbox	Used to extract text from PDF resumes
 
 
 The implementation involved the following steps:
-I.	Upload the resume: The resumes that are uploaded come through the AppScript forum and are directly saved to a Google folder.
-II.	Loading the resumes: The resumes were loaded from a folder using the glob library.
-III.	Extracting the text from the resumes: The text was extracted from the PDF resumes using the python-pdfbox library.
-IV.	Converting the text to a CSV file: The extracted text was then converted to a CSV file.
-V.	Preprocessing the text: The text in the CSV file was preprocessed using Spacy and NLTK libraries. The text was converted to lowercase, punctuation was removed, stop words were removed, and the remaining words were lemmatized.
-VI.	Extracting the skills: The preprocessed text was then used to extract the skills present in the resumes using the skillNer library.
-VII.	Ranking the resumes based on skills: The resumes were ranked based on the presence of the keywords related job field.
+&#x2160	Upload the resume: The resumes that are uploaded come through the AppScript forum and are directly saved to a Google folder.
+&#x2161	Loading the resumes: The resumes were loaded from a folder using the glob library.
+&#x2162	Extracting the text from the resumes: The text was extracted from the PDF resumes using the python-pdfbox library.
+&#x2163	Converting the text to a CSV file: The extracted text was then converted to a CSV file.
+&#x2164	Preprocessing the text: The text in the CSV file was preprocessed using Spacy and NLTK libraries. The text was converted to lowercase, punctuation was removed, stop words were removed, and the remaining words were lemmatized.
+&#x2165	Extracting the skills: The preprocessed text was then used to extract the skills present in the resumes using the skillNer library.
+&#x2166	Ranking the resumes based on skills: The resumes were ranked based on the presence of the keywords related job field.
 example:
 	Data Science - Machine learn, AI,  Data analysis,  R,  Python.
 	Software Engineering – Python, Java, SQL, Linux
