@@ -18,7 +18,7 @@ allocated a unique ID alongside the text extracted and the filename using the te
 that created. The load_csv function was then utilised to load the .csv file into a pandas data frame.
 Libraries used: CSV, pandas, hashlib
 
-Preprocessing and Cleaning:
+- Preprocessing and Cleaning:
 Then utilized the NLTK library to clean the resume text as follows:
 ○ Regex to remove hyperlinks, special characters, or punctuation.
 ○ Lowering text
@@ -28,13 +28,13 @@ Then utilized the NLTK library to clean the resume text as follows:
 The cleaned text was appended as a column to the data frame, respectively.
 Libraries used: NLTK, re
 
-● Extract Skills:
+- Extract Skills:
 To extract skills, used skillNer, which is a module that allows us to automatically extract
 skills and certifications from unstructured job postings, texts, and applicant resumes. The
 extracted skills (both soft and hard skills) were then passed through the data frame
 Libraries used: skillNer, spacy
 
-● Ranking:
+- Ranking:
 Once the skills are visualised, the user gets to pass keywords and a mark respective to each
 keyword mentioned. Developed the function to ensure that points are given to one word only
 once (eg: if the score for Java is 2 the points allocated for the candidate will be only 2
@@ -43,10 +43,8 @@ prioritise the important skills. Afterwards, the scores for each resume were cal
 with maximum scorers at the top of the list.
 Libraries used: numpy
 
-
- 
-Implementation
-Web page for resume submission and resume rating
+## Implementation
+### Web page for resume submission and resume rating
 During the implementation phase, created a web application as company career page using Webstorm software, which ran on localhost. Through this application candidates can submit their resumes for jobs and the HR unit can find the best candidate from ranking. The application had a feature to upload resumes in PDF format, which was connected to Google App Script. The resumes were uploaded to our Google Drive and connected to Google Colab.
 It ran an automated process to rank the resumes based on a set of criteria, and the results were displayed on the web application in CSV format.
 Overall, the implementation of the application was successful, and it was able to achieve the desired functionality of automating the resume ranking process. The use of Google App Script and Google Colab allowed to efficiently process and analyze the resumes, while the integration with web application provided a user-friendly interface for uploading and viewing the results.
@@ -77,7 +75,3 @@ example:
 Overall, the implementation involved the use of several tools and libraries for data extraction, preprocessing, and visualization. The end result was a set of visualizations and rankings that can be used to gain insights into the skills present in the resumes.
 
 
-
-Title: Resumeranking: Improving the Hiring Process with Machine Learning
-Description: As part of a team of data scientists, I developed Resumeranking, a machine learning algorithm designed to improve the efficiency and effectiveness of the hiring process. By analyzing a large dataset of resumes and job postings, we were able to identify key factors that predict whether a candidate is a good match for a particular job. Our algorithm uses these factors to rank resumes and highlight the most promising candidates, making it easier for recruiters to identify top talent and save time in the hiring process. I'm proud to have been part of a project that has the potential to make a real impact on the way companies find and hire the best candidates.
-Key skills: machine learning, data analysis, natural language processing, Python, SQL, project management
