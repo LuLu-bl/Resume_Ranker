@@ -8,11 +8,17 @@ This an application for automated resume screening and ranking using NLP technol
 
 - **Text Extraction:** First, created a function named "extract_pdf_text" that accepts a user-provided folder path containing resumes in PDF format. By utilising the python-pdfbox library, it will convert the .pdfs to .txt files. In environments where the python-pdfbox library is not supported, used the PyPDF2 library. 
 
-	**Libraries used:** python-pdfbox, os, glob
+	**Libraries used:** 
+		[python-pdfbox](https://en.wikipedia.org/wiki/PDFBox), 
+		[os](https://en.wikipedia.org/wiki/Operating_system), 
+		[glob](https://en.wikipedia.org/wiki/lob_%28programming%29)
 
 - **Loading:** The pdf resumes that were extracted to text were then loaded into a .csv file. Each text file was allocated a unique ID alongside the text extracted and the filename using the text to csv function that created. The load_csv function was then utilised to load the .csv file into a pandas data frame. 
 
-	**Libraries used:** CSV, pandas, hashlib
+	**Libraries used:** 
+	[CSV](https://en.wikipedia.org/wiki/Comma-separated_values)
+	[pandas](https://en.wikipedia.org/wiki/Pandas_%28software%29)
+	[hashlib](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 
 - **Preprocessing and Cleaning:** Then utilized the NLTK library to clean the resume text as follows:
 	- Regex to remove hyperlinks, special characters, or punctuation.
@@ -22,11 +28,15 @@ This an application for automated resume screening and ranking using NLP technol
 	- Removing English stopwords
 	The cleaned text was appended as a column to the data frame, respectively.
 
-	**Libraries used:** NLTK, re
+	**Libraries used:** 
+	[NLTK](https://en.wikipedia.org/wiki/Natural_Language_Toolkit)
+	[re](https://en.wikipedia.org/wiki/Regular_expression)
 
 - **Extract Skills:** To extract skills, used skillNer, which is a module that allows us to automatically extract skills and certifications from unstructured job postings, texts, and applicant resumes. The extracted skills (both soft and hard skills) were then passed through the data frame 
 
-	**Libraries used:** skillNer, spacy
+	**Libraries used:**
+	[skillNer](https://en.wikipedia.org/wiki/Named-entity_recognition)
+	[spacy](https://en.wikipedia.org/wiki/SpaCy)
 
 - **Ranking:** Once the skills are visualised, the user gets to pass keywords and a mark respective to each keyword mentioned. Developed the function to ensure that points are given to one word only once.
 	
@@ -34,7 +44,7 @@ This an application for automated resume screening and ranking using NLP technol
 	
 	This way the recruiter can prioritise the important skills. Afterwards, the scores for each resume were calculated and sortedwith maximum scorers at the top of the list.
 
-	**Libraries used:** numpy
+	**Libraries used:** [numpy](https://en.wikipedia.org/wiki/NumPy)
 
 ## Implementation
 ### Web page for resume submission and resume rating
