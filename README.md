@@ -62,7 +62,7 @@ Python Libraries 	pdfbox	Used to extract text from PDF resumes
 
 
 The implementation involved the following steps:
-&#x2160	Upload the resume: The resumes that are uploaded come through the AppScript forum and are directly saved to a Google folder.
+I &#x2160	Upload the resume: The resumes that are uploaded come through the AppScript forum and are directly saved to a Google folder.
 &#x2161	Loading the resumes: The resumes were loaded from a folder using the glob library.
 &#x2162	Extracting the text from the resumes: The text was extracted from the PDF resumes using the python-pdfbox library.
 &#x2163	Converting the text to a CSV file: The extracted text was then converted to a CSV file.
