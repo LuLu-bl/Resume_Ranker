@@ -16,7 +16,7 @@ This an application for automated resume screening and ranking using NLP technol
 - **Loading:** The pdf resumes that were extracted to text were then loaded into a .csv file. Each text file was allocated a unique ID alongside the text extracted and the filename using the text to csv function that created. The load_csv function was then utilised to load the .csv file into a pandas data frame. 
 
 	**Libraries used:** 
-	[CSV](	[https://www.activestate.com/resources/quick-reads/what-is-pandas-in-python-everything-you-need-to-know/](https://en.wikipedia.org/wiki/Pandas_%28software%29)
+	[CSV]([https://www.activestate.com/resources/quick-reads/what-is-pandas-in-python-everything-you-need-to-know/](https://en.wikipedia.org/wiki/Pandas_%28software%29),
 	[hashlib](https://vegibit.com/what-is-python-hashlib/#:~:text=hashlib%20is%20a%20module%20in,output%20called%20a%20hash%20value.)
 
 - **Preprocessing and Cleaning:** Then utilized the NLTK library to clean the resume text as follows:
@@ -28,14 +28,14 @@ This an application for automated resume screening and ranking using NLP technol
 	The cleaned text was appended as a column to the data frame, respectively.
 
 	**Libraries used:** 
-	[NLTK](https://www.analyticsvidhya.com/blog/2021/07/getting-started-with-nlp-using-nltk-library/#:~:text=NLTK%20is%20a%20standard%20python,for%20NLP%20and%20Computational%20Linguistics.)
+	[NLTK](https://www.analyticsvidhya.com/blog/2021/07/getting-started-with-nlp-using-nltk-library/#:~:text=NLTK%20is%20a%20standard%20python,for%20NLP%20and%20Computational%20Linguistics.),
 	[re](https://developers.google.com/edu/python/regular-expressions#:~:text=The%20Python%20%22re%22%20module%20provides,that%20pattern%20within%20the%20string.)
 
 - **Extract Skills:** To extract skills, used skillNer, which is a module that allows us to automatically extract skills and certifications from unstructured job postings, texts, and applicant resumes. The extracted skills (both soft and hard skills) were then passed through the data frame 
 
 	**Libraries used:**
-	[skillNer](https://pypi.org/project/skillNer/#:~:text=SkillNer%20is%20an%20NLP%20module,linker%20to%20prevent%20skill%20duplications.)
-	[spacy](https://realpython.com/natural-language-processing-spacy-python/#:~:text=spaCy%20is%20a%20free%2C%20open,general%2Dpurpose%20natural%20language%20processing.)
+	[skillNer](https://pypi.org/project/skillNer/#:~:text=SkillNer%20is%20an%20NLP%20module,linker%20to%20prevent%20skill%20duplications.),
+	[spacy](https://realpython.com/natural-language-processing-spacy python/#:~:text=spaCy%20is%20a%20free%2C%20open,general%2Dpurpose%20natural%20language%20processing.)
 
 - **Ranking:** Once the skills are visualised, the user gets to pass keywords and a mark respective to each keyword mentioned. Developed the function to ensure that points are given to one word only once.
 	
