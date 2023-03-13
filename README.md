@@ -1,16 +1,18 @@
-# Resume_Ranker
-Resume Screening With NLP
-Introduction
+# Resume Screening With NLP
+## Introduction
 This an application for automated resume screening and ranking using NLP technologies that can help companies and job seekers streamline the recruitment process. The application can analyse job descriptions and resumes and identify the most relevant skills, experience, and education required for the job. It then ranks each resume based on how well it matches the job requirements, allowing companies to focus on the most qualified candidates quickly.  The application can also help reduce human biases, ensuring a fair and consistent screening and ranking process. The use of NLP in resume screening and ranking can improve the efficiency and accuracy of the screening process, enabling companies to focus on the most qualified candidates and helping job seekers to increase their chances of being selected.
 
-Text Extraction:
+## Methodology
+### Logical Flow and Methods Used 
+
+- Text Extraction:
 First, created a function named "extract_pdf_text" that accepts a user-provided folder path
 containing resumes in PDF format. By utilising the python-pdfbox library, it will convert the
 .pdfs to .txt files. In environments where the python-pdfbox library is not supported, used the
 PyPDF2 library
 Libraries used: python-pdfbox, os, glob
 
-Loading:
+- Loading:
 The pdf resumes that were extracted to text were then loaded into a .csv file. Each text file was
 allocated a unique ID alongside the text extracted and the filename using the text to csv function
 that created. The load_csv function was then utilised to load the .csv file into a pandas data frame.
@@ -41,8 +43,7 @@ prioritise the important skills. Afterwards, the scores for each resume were cal
 with maximum scorers at the top of the list.
 Libraries used: numpy
 
-Methodology
-Logical Flow and Methods Used 
+
  
 Implementation
 Web page for resume submission and resume rating
